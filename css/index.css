@@ -150,8 +150,8 @@ header button{
     margin-left: 5px;
 }
   
-.sticky .th-sort-asc:hover,
-.sticky .th-sort-desc:hover {
+.sticky .th-sort-asc,
+.sticky .th-sort-desc {
     background: rgb(96, 154, 221);
 }
   

@@ -34,15 +34,31 @@ option {
 }
 
 label {
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 #last {
-    margin-left: 10px;
+    margin-left: 30px;
     margin-bottom: 20px;
 }
 
 button a{
     text-decoration: none;
     color: black;
+}
+
+#rmkCd {
+    margin-left: 18px;
+}
+
+#nrc {
+    margin-left: 43px;
+}
+
+#status {
+    margin-left: 55px;
+}
+
+#end {
+    margin-left: 9px;
 }
