@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Remark Codes</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1> ALL REMARK CODES </h1>
+        <button class="addButton"><a href="add.html"> Add </a></button>
+
+        <button class="show">Filter</button>
+
+        <span class="filters">
+            <input type="radio" id="all" name="filter" value="all" onclick="window.location='index.html';">
+            <label for="male">All</label>
+
+            <input type="radio" id="active" name="filter" value="active" onclick="window.location='active.html';">
+            <label for="male">Active</label>
+
+            <input type="radio" id="inactive" name="filter" value="inactive" onclick="window.location='inactive.html';">
+            <label for="male">Inactive</label>
+        </span>
+    </header>
+
+    <table class="table sticky" id="theTable">
+        <thead>
+            <tr>
+                <th>Remark Code</th>
+                <th>Recycle Frequency</th>
+                <th>Number Cycles</th>
+                <th>Fail Action<br> Pend(P) / Reject (R)</th>
+                <th>Fail Action Remark Code</th>
+                <th>Status <br> Active(A) / Inactive (I)</th>
+                <th>Created By</th>
+                <th>Start Date </th>
+                <th>End Date</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>ABC</td>
+                <td>001</td>
+                <td>002</td>
+                <td>P </td>
+                <td>JKL</td>
+                <td> A </td>
+                <td>Jane Doe</td>
+                <td>07/22/2019</td>
+                <td>07/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>A2C</td>
+                <td>401</td>
+                <td>052</td>
+                <td>R </td>
+                <td>J7Q</td>
+                <td> I </td>
+                <td>Jadon Sancho</td>
+                <td>08/12/2017</td>
+                <td>07/31/2019</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABD</td>
+                <td>001</td>
+                <td>001</td>
+                <td>P </td>
+                <td>LTQ</td>
+                <td> A </td>
+                <td>John Doe</td>
+                <td>01/21/2020</td>
+                <td>08/31/2021</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DB2</td>
+                <td>051</td>
+                <td>471</td>
+                <td>P </td>
+                <td>IEP</td>
+                <td> I </td>
+                <td>Timo Werner</td>
+                <td>01/21/2014</td>
+                <td>03/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABB</td>
+                <td>009</td>
+                <td>021</td>
+                <td>P </td>
+                <td>QHJ</td>
+                <td> A </td>
+                <td>Longer OverAll Name</td>
+                <td>09/21/2018</td>
+                <td>02/29/2024</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>CRM</td>
+                <td>679</td>
+                <td>081</td>
+                <td>P </td>
+                <td>TQS</td>
+                <td> I </td>
+                <td>Ansu Fati</td>
+                <td>02/21/2018</td>
+                <td>02/22/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABC</td>
+                <td>001</td>
+                <td>002</td>
+                <td>P </td>
+                <td>JKL</td>
+                <td> A </td>
+                <td>Jane Doe</td>
+                <td>07/22/2019</td>
+                <td>07/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>A2C</td>
+                <td>401</td>
+                <td>052</td>
+                <td>R </td>
+                <td>J7Q</td>
+                <td> I </td>
+                <td>Jadon Sancho</td>
+                <td>08/12/2017</td>
+                <td>07/31/2019</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABD</td>
+                <td>001</td>
+                <td>001</td>
+                <td>P </td>
+                <td>LTQ</td>
+                <td> A </td>
+                <td>John Doe</td>
+                <td>01/21/2020</td>
+                <td>08/31/2021</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DB2</td>
+                <td>051</td>
+                <td>471</td>
+                <td>P </td>
+                <td>IEP</td>
+                <td> I </td>
+                <td>Timo Werner</td>
+                <td>01/21/2014</td>
+                <td>03/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABB</td>
+                <td>009</td>
+                <td>021</td>
+                <td>P </td>
+                <td>QHJ</td>
+                <td> A </td>
+                <td>Longer OverAll Name</td>
+                <td>09/21/2018</td>
+                <td>02/29/2024</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>CRM</td>
+                <td>679</td>
+                <td>081</td>
+                <td>P </td>
+                <td>TQS</td>
+                <td> I </td>
+                <td>Ansu Fati</td>
+                <td>02/21/2018</td>
+                <td>02/22/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABC</td>
+                <td>001</td>
+                <td>002</td>
+                <td>P </td>
+                <td>JKL</td>
+                <td> A </td>
+                <td>Jane Doe</td>
+                <td>07/22/2019</td>
+                <td>07/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>A2C</td>
+                <td>401</td>
+                <td>052</td>
+                <td>R </td>
+                <td>J7Q</td>
+                <td> I </td>
+                <td>Jadon Sancho</td>
+                <td>08/12/2017</td>
+                <td>07/31/2019</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABD</td>
+                <td>001</td>
+                <td>001</td>
+                <td>P </td>
+                <td>LTQ</td>
+                <td> A </td>
+                <td>John Doe</td>
+                <td>01/21/2020</td>
+                <td>08/31/2021</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DB2</td>
+                <td>051</td>
+                <td>471</td>
+                <td>P </td>
+                <td>IEP</td>
+                <td> I </td>
+                <td>Timo Werner</td>
+                <td>01/21/2014</td>
+                <td>03/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABB</td>
+                <td>009</td>
+                <td>021</td>
+                <td>P </td>
+                <td>QHJ</td>
+                <td> A </td>
+                <td>Longer OverAll Name</td>
+                <td>09/21/2018</td>
+                <td>02/29/2024</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>CRM</td>
+                <td>679</td>
+                <td>081</td>
+                <td>P </td>
+                <td>TQS</td>
+                <td> I </td>
+                <td>Ansu Fati</td>
+                <td>02/21/2018</td>
+                <td>02/22/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABC</td>
+                <td>001</td>
+                <td>002</td>
+                <td>P </td>
+                <td>JKL</td>
+                <td> A </td>
+                <td>Jane Doe</td>
+                <td>07/22/2019</td>
+                <td>07/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>A2C</td>
+                <td>401</td>
+                <td>052</td>
+                <td>R </td>
+                <td>J7Q</td>
+                <td> I </td>
+                <td>Jadon Sancho</td>
+                <td>08/12/2017</td>
+                <td>07/31/2019</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABD</td>
+                <td>001</td>
+                <td>001</td>
+                <td>P </td>
+                <td>LTQ</td>
+                <td> A </td>
+                <td>John Doe</td>
+                <td>01/21/2020</td>
+                <td>08/31/2021</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DB2</td>
+                <td>051</td>
+                <td>471</td>
+                <td>P </td>
+                <td>IEP</td>
+                <td> I </td>
+                <td>Timo Werner</td>
+                <td>01/21/2014</td>
+                <td>03/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABB</td>
+                <td>009</td>
+                <td>021</td>
+                <td>P </td>
+                <td>QHJ</td>
+                <td> A </td>
+                <td>Longer OverAll Name</td>
+                <td>09/21/2018</td>
+                <td>02/29/2024</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>CRM</td>
+                <td>679</td>
+                <td>081</td>
+                <td>P </td>
+                <td>TQS</td>
+                <td> I </td>
+                <td>Ansu Fati</td>
+                <td>02/21/2018</td>
+                <td>02/22/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABC</td>
+                <td>001</td>
+                <td>002</td>
+                <td>P </td>
+                <td>JKL</td>
+                <td> A </td>
+                <td>Jane Doe</td>
+                <td>07/22/2019</td>
+                <td>07/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>A2C</td>
+                <td>401</td>
+                <td>052</td>
+                <td>R </td>
+                <td>J7Q</td>
+                <td> I </td>
+                <td>Jadon Sancho</td>
+                <td>08/12/2017</td>
+                <td>07/31/2019</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABD</td>
+                <td>001</td>
+                <td>001</td>
+                <td>P </td>
+                <td>LTQ</td>
+                <td> A </td>
+                <td>John Doe</td>
+                <td>01/21/2020</td>
+                <td>08/31/2021</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DB2</td>
+                <td>051</td>
+                <td>471</td>
+                <td>P </td>
+                <td>IEP</td>
+                <td> I </td>
+                <td>Timo Werner</td>
+                <td>01/21/2014</td>
+                <td>03/31/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ABB</td>
+                <td>009</td>
+                <td>021</td>
+                <td>P </td>
+                <td>QHJ</td>
+                <td> A </td>
+                <td>Longer OverAll Name</td>
+                <td>09/21/2018</td>
+                <td>02/29/2024</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="inactivate.html">Inactivate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>CRM</td>
+                <td>679</td>
+                <td>081</td>
+                <td>P </td>
+                <td>TQS</td>
+                <td> I </td>
+                <td>Ansu Fati</td>
+                <td>02/21/2018</td>
+                <td>02/22/2020</td>
+                <td>
+                    <div class="post">
+
+                        <button class="show">:</button>
+
+                        <span class="links">
+                            <a href="update.html">Update</a>
+                            <a href="activate.html">Activate</a>
+                        </span>
+
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <button id="topButton"><a href="#">Top</a></button>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
