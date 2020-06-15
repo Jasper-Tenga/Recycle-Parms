@@ -53,3 +53,7 @@ document.querySelectorAll(".sticky th").forEach(headerCell => {
         sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
     });
 });
+
+function getFocus() {
+    document.getElementById("rmkCd").focus();
+}
