@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/add.css">
 </head>
 
-<body>
+<body onload="getFocus();">
 
     <header>
         <h1> ADD REMARK CODE </h1>
@@ -17,19 +17,19 @@
 
     <form>
         <label for="rmkCd">Remark Code:</label>
-        <input type="text" id="rmkCd" name="rmkCd" maxlength="3" size="3"><br><br>
+        <input type="text" id="rmkCd" name="rmkCd" maxlength="3" size="3">
 
         <label for="rFreq">Recycle Frequency:</label>
-        <input type="text" id="rFreq" name="rFreq" maxlength="3" size="3"><br><br>
+        <input type="text" id="rFreq" name="rFreq" maxlength="3" size="3">
 
         <label for="nbrCyc">Number Cycles:</label>
         <input type="text" id="nbrCyc" name="nbrCyc" maxlength="3" size="3"><br><br>
 
         <label for="fail">Fail Action (P/R):</label>
-        <input type="text" id="fail" name="fail" maxlength="1" size="1"><br><br>
+        <input type="text" id="fail" name="fail" maxlength="1" size="1">
 
-        <label for="newRmkCd">New Remark Code:</label>
-        <input type="text" id="newRmkCd" name="newRmkCd" maxlength="3" size="3"><br><br>
+        <label id="nrc" for="newRmkCd">New Remark Code:</label>
+        <input type="text" id="newRmkCd" name="newRmkCd" maxlength="3" size="3">
 
         <label for="status">Status:</label>
         <select name="status" id="status">
@@ -46,6 +46,8 @@
         <input type="submit" value="Add" id="last">
         <button><a href="active.html">Back</a></button>
     </form>
+
+    <script src="js/index.js"></script>
 
 </body>
 
